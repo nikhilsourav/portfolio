@@ -1,0 +1,146 @@
+/* ============ Container ============= */
+.sidebar_container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* ============ Reset ============= */
+.sidebar_container ul,
+.sidebar_container a {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ============ Profile img ============= */
+.sidebar_img {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+/* ============ Profile name ============= */
+.sidebar_name {
+  font-family: 'Kaushan Script';
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+/* ============ Profile about ============= */
+.sidebar_about {
+  font-family: 'Overpass';
+}
+
+.sidebar_name span {
+  color: var(--lightGreen);
+}
+
+/* ============ Resume button ============= */
+#sidebar_btn {
+  background: var(--darkGreen);
+  height: 40px;
+  min-width: 120px;
+  border: none;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 1.2rem;
+  font-family: 'Rubik', cursive;
+  position: relative;
+  transition: 0.7s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  transition: 0.5s all;
+}
+
+#sidebar_btn #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.sidebar_resume {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#sidebar_btn:hover {
+  color: var(--black);
+  background: transparent;
+}
+
+#sidebar_btn:hover #circle {
+  height: 40px;
+  width: 120px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 3px solid var(--darkGreen);
+}
+
+/* ============ Sidebar details heading ============= */
+.sidebar_details_heading {
+  font-family: 'Overpass';
+  font-weight: 600;
+  text-align: left;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+/* ============ Sidebar Personal details ============= */
+.sidebar_details {
+  align-self: flex-start;
+}
+
+/* ============ Sidebar Icons ============= */
+.sidebar_icons {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0px 10px 2px 2px;
+}
+.address {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0px 10px 2px 0px;
+}
+.phone {
+  width: 1rem;
+  height: 1rem;
+}
+.email {
+  width: 1rem;
+  height: 1rem;
+}
+.github {
+  width: 1.4rem;
+  margin: 0px 10px 5px 1px;
+}
+.hashnode {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+/* ============ Sidebar content ============= */
+.sidebar_details li {
+  font-family: 'Nunito';
+}
+
+/* ============ Sidebar social ============= */
+.sidebar_socials {
+  align-self: flex-start;
+}
