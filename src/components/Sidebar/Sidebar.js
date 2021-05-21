@@ -12,7 +12,7 @@ import './Sidebar.css';
 const Sidebar = () => {
   return (
     <div className='sidebar_container'>
-      <img src={profile} alt='profile image' className='sidebar_img' />
+      <img src={profile} alt='profile' className='sidebar_img' />
       <div className='sidebar_name'>
         Nikhil<span> Sourav</span>
       </div>
@@ -48,19 +48,23 @@ const Sidebar = () => {
       <div className='sidebar_socials'>
         <h5 className='sidebar_details_heading'>Social Media:</h5>
         <ul>
-          <a href='https://github.com/nikhilsourav' target='_blank'>
+          <a href='https://github.com/nikhilsourav' target='_blank' rel='noopener noreferrer'>
             <li>
               <img className='sidebar_icons github' src={github} alt='github' />
               Github
             </li>
           </a>
-          <a href='https://www.linkedin.com/in/nikhil-sourav-796024183/' target='_blank'>
+          <a
+            href='https://www.linkedin.com/in/nikhil-sourav-796024183/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <li>
               <img className='sidebar_icons linkedin' src={linkedin} alt='linkedin' />
               LinkedIn
             </li>
           </a>
-          <a href='https://hashnode.com/@fifu' target='_blank'>
+          <a href='https://hashnode.com/@fifu' target='_blank' rel='noopener noreferrer'>
             <li>
               <img className='sidebar_icons hashnode' src={hashnode} alt='hashnode' />
               Hashnode
