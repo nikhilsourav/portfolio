@@ -6,9 +6,14 @@
 /* ======== Navbar active ======= */
 .navbar_active {
   font-family: 'Nunito';
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   border-bottom: 4px solid var(--darkGreen);
+}
+@media only screen and (max-width: 1000px) {
+  .navbar_active {
+    font-size: 1.2rem;
+  }
 }
 
 /* ======== Navbar items ======= */
@@ -38,7 +43,7 @@
 /* ======== Navbar icons ======= */
 .navbar_icon_container {
   border-radius: 50%;
-  transform: translateX(200%);
+  transform: translateX(90%);
   opacity: 0;
   z-index: 0;
   transition: all 0.3s ease-in-out;
