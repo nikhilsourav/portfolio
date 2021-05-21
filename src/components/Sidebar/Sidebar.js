@@ -6,6 +6,7 @@ import email from '../../assets/icons/email.svg';
 import github from '../../assets/icons/github.svg';
 import linkedin from '../../assets/icons/linkedin.svg';
 import hashnode from '../../assets/icons/hashnode.svg';
+import resume from '../../assets/resume/resume.pdf';
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -22,7 +23,7 @@ const Sidebar = () => {
           <li>Competitive Programmer</li>
         </ul>
       </div>
-      <a id='sidebar_btn'>
+      <a id='sidebar_btn' href={resume} download='resume.pdf'>
         <span className='sidebar_resume'>
           resume<div id='circle'></div>
         </span>
