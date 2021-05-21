@@ -81,7 +81,7 @@ body {
 
 .circle2 {
   bottom: 2%;
-  left: 8%;
+  left: 9.5%;
 }
 
 .circle3 {
@@ -95,7 +95,7 @@ body {
 
 .circle4 {
   bottom: 15%;
-  right: 2%;
+  right: 5%;
   height: 7rem;
   width: 7rem;
   opacity: 0.3;
@@ -113,21 +113,15 @@ body {
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.25));
   border-radius: 2rem;
   max-width: 1200px;
-  padding: 1rem;
 }
 @media only screen and (max-width: 1000px) {
   .sidebar {
     padding: 0.7rem;
   }
 }
-@media only screen and (min-width: 1000px) {
-  .sidebar {
-    padding: 1.5rem;
-  }
-}
 @media only screen and (max-width: 1200px) {
   .sidebar {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 }
 
