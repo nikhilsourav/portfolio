@@ -8,8 +8,10 @@
 :root {
   --white: #fffdd2;
   --black: #232b2b;
-  --darkGreen: #65dfc9;
   --lightGreen: #6cdbeb;
+  --darkGreen: #65dfc9;
+  --extraLightGreen: #6cdaeb94;
+  --extraDarkGreen: #15b396;
 }
 
 * {
@@ -128,9 +130,4 @@ body {
 /* ========== Content =========== */
 .content {
   flex: 2.1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
 }

@@ -137,10 +137,19 @@
 }
 /* ============ Sidebar content ============= */
 .sidebar_details li {
-  font-family: 'Nunito';
+  font-family: 'Overpass';
 }
 
 /* ============ Sidebar social ============= */
 .sidebar_socials {
   align-self: flex-start;
+  font-family: 'Overpass';
+}
+
+.sidebar_socials a {
+  color: var(--black);
+  transition: 0.4s all;
+}
+.sidebar_socials a:hover {
+  color: var(--extraDarkGreen);
 }
