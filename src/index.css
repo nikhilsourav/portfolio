@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
@@ -6,10 +6,10 @@
 
 /* ========== Root =========== */
 :root {
-  --white: #fffdd2;
-  --black: #232b2b;
-  --lightGreen: #6cdbeb;
-  --darkGreen: #65dfc9;
+  --white: #ffffc7;
+  --black: #233e8b;
+  --lightGreen: #a9f1df;
+  --darkGreen: #1eae98;
   --extraLightGreen: #6cdaeb94;
   --extraDarkGreen: #15b396;
 }
@@ -39,7 +39,7 @@ body {
   background: var(--white);
   min-height: 90vh;
   width: 65%;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
   border-radius: 2rem;
   z-index: 3;
   backdrop-filter: blur(2rem);

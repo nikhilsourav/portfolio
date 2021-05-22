@@ -7,7 +7,7 @@
 .navbar_active {
   font-family: 'Nunito';
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   border-bottom: 4px solid var(--darkGreen);
 }
 @media only screen and (max-width: 1000px) {

@@ -34,7 +34,7 @@
 }
 
 .sidebar_name span {
-  color: var(--lightGreen);
+  color: var(--darkGreen);
 }
 
 /* ============ Resume button ============= */
@@ -151,5 +151,5 @@
   transition: 0.4s all;
 }
 .sidebar_socials a:hover {
-  color: var(--extraDarkGreen);
+  color: var(--darkGreen);
 }
