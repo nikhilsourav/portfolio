@@ -36,13 +36,13 @@
   transition: all 0.8s;
 }
 .ripple:hover {
-  background: var(--extraLightColor)
-    radial-gradient(circle, transparent 1%, var(--extraLightColor) 1%) center/10000%;
+  background: var(--darkColor) radial-gradient(circle, transparent 1%, var(--lightColor) 1%)
+    center/10000%;
 }
 .ripple:active {
-  background-color: var(--extraLightColor);
+  background-color: var(--darkColor);
   background-size: 100%;
-  transition: background 0s;
+  transition: all 0s ease;
 }
 .navbar_menu_container {
   margin-left: 15px;
@@ -76,7 +76,7 @@
 }
 .navbar_icon_container:hover {
   border-radius: 50%;
-  background-color: var(--extraLightColor);
+  background-color: var(--darkColor);
 }
 @media only screen and (max-width: 650px) {
   .navbar_icon_container {
