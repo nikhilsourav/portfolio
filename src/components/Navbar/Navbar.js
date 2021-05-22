@@ -30,40 +30,56 @@ const Navbar = () => {
     <div className='navbar'>
       <div className='navbar_active'>{activePage}</div>
       <div className='navbar_items'>
-        <a href='#' className='navbar_menu_container' onClick={toggleIcons}>
+        <button className='navbar_menu_container ripple' onClick={toggleIcons}>
           <img className='navbar_menu navbar_activator' title='menu' src={menu} alt='menu' />
-        </a>
+        </button>
         <Link
           to='/Projects'
-          className={activeIcons ? 'navbar_icon_container active_icons' : 'navbar_icon_container'}
+          className={
+            activeIcons
+              ? 'navbar_icon_container active_icons ripple'
+              : 'navbar_icon_container ripple'
+          }
+          onClick={() => setActivePage('Projects')}
+          href='#'
         >
-          <a onClick={() => setActivePage('Projects')} href='#'>
-            <img className='navbar_icon projects' title='projects' src={projects} alt='' />
-          </a>
+          <img className='navbar_icon projects' title='projects' src={projects} alt='' />
         </Link>
         <Link
           to='/Skills'
-          className={activeIcons ? 'navbar_icon_container active_icons' : 'navbar_icon_container'}
+          className={
+            activeIcons
+              ? 'navbar_icon_container active_icons ripple'
+              : 'navbar_icon_container ripple'
+          }
+          onClick={() => setActivePage('Skills')}
+          href='#'
         >
-          <a onClick={() => setActivePage('Skills')} href='#'>
-            <img className='navbar_icon skills' title='skills' src={skills} alt='' />
-          </a>
+          <img className='navbar_icon skills' title='skills' src={skills} alt='' />
         </Link>
         <Link
+          onClick={() => setActivePage('About')}
+          href='#'
           to='/About'
-          className={activeIcons ? 'navbar_icon_container active_icons' : 'navbar_icon_container'}
+          className={
+            activeIcons
+              ? 'navbar_icon_container active_icons ripple'
+              : 'navbar_icon_container ripple'
+          }
         >
-          <a onClick={() => setActivePage('About')} href='#'>
-            <img className='navbar_icon about' title='about' src={about} alt='' />
-          </a>
+          <img className='navbar_icon about' title='about' src={about} alt='' />
         </Link>
         <Link
           to='/'
-          className={activeIcons ? 'navbar_icon_container active_icons' : 'navbar_icon_container'}
+          className={
+            activeIcons
+              ? 'navbar_icon_container active_icons ripple'
+              : 'navbar_icon_container ripple'
+          }
+          onClick={() => setActivePage('Home')}
+          href='#'
         >
-          <a onClick={() => setActivePage('Home')} href='#'>
-            <img className='navbar_icon home' title='home' src={home} alt='' />
-          </a>
+          <img className='navbar_icon home' title='home' src={home} alt='' />
         </Link>
       </div>
     </div>
