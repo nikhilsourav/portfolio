@@ -8,10 +8,10 @@
 :root {
   --white: #ffffc7;
   --black: #233e8b;
-  --lightGreen: #a9f1df;
-  --darkGreen: #1eae98;
-  --extraLightGreen: #6cdaeb94;
-  --extraDarkGreen: #15b396;
+  --lightColor: #a9f1df;
+  --darkColor: #1eae98;
+  --extraLightColor: #6cdaeb94;
+  --extraDarkColor: #15b396;
 }
 
 * {
@@ -28,7 +28,7 @@ body {
 /* ========== Main =========== */
 .main {
   min-height: 100vh;
-  background: linear-gradient(to right top, var(--darkGreen), var(--lightGreen));
+  background: linear-gradient(to right top, var(--darkColor), var(--lightColor));
   display: flex;
   align-items: center;
   justify-content: center;

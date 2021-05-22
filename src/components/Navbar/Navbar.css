@@ -8,7 +8,7 @@
   font-family: 'Nunito';
   font-size: 1.4rem;
   font-weight: 700;
-  border-bottom: 4px solid var(--darkGreen);
+  border-bottom: 4px solid var(--darkColor);
 }
 @media only screen and (max-width: 1000px) {
   .navbar_active {
@@ -36,11 +36,11 @@
   transition: all 0.8s;
 }
 .ripple:hover {
-  background: var(--extraLightGreen)
-    radial-gradient(circle, transparent 1%, var(--extraLightGreen) 1%) center/10000%;
+  background: var(--extraLightColor)
+    radial-gradient(circle, transparent 1%, var(--extraLightColor) 1%) center/10000%;
 }
 .ripple:active {
-  background-color: var(--extraLightGreen);
+  background-color: var(--extraLightColor);
   background-size: 100%;
   transition: background 0s;
 }
@@ -48,7 +48,7 @@
   margin-left: 15px;
   border-radius: 50%;
   z-index: 1;
-  transition: all 0.5s ease;
+  transition: all 0.3s linear;
 }
 .navbar_menu {
   max-width: 38px;
@@ -76,7 +76,7 @@
 }
 .navbar_icon_container:hover {
   border-radius: 50%;
-  background-color: var(--extraLightGreen);
+  background-color: var(--extraLightColor);
 }
 @media only screen and (max-width: 650px) {
   .navbar_icon_container {

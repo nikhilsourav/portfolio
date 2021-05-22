@@ -34,12 +34,12 @@
 }
 
 .sidebar_name span {
-  color: var(--darkGreen);
+  color: var(--darkColor);
 }
 
 /* ============ Resume button ============= */
 #sidebar_btn {
-  background: var(--darkGreen);
+  background: var(--darkColor);
   height: 40px;
   min-width: 120px;
   border: none;
@@ -91,7 +91,7 @@
   width: 120px;
   left: 0;
   border-radius: 0;
-  border-bottom: 3px solid var(--darkGreen);
+  border-bottom: 3px solid var(--darkColor);
 }
 
 /* ============ Sidebar details heading ============= */
@@ -151,5 +151,5 @@
   transition: 0.4s all;
 }
 .sidebar_socials a:hover {
-  color: var(--darkGreen);
+  color: var(--darkColor);
 }
