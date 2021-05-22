@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Home from './components/Home/Home.js';
@@ -18,18 +18,23 @@ function App() {
             </div>
             <div className='content'>
               <Navbar />
-              <Route path='/' exact>
-                <Home />
-              </Route>
-              <Route path='/About' exact>
-                <About />
-              </Route>
-              <Route path='/Skills' exact>
-                <Skills />
-              </Route>
-              <Route path='/Projects' exact>
-                <Projects />
-              </Route>
+              <Switch>
+                <Route path='/' exact>
+                  <Home />
+                </Route>
+                <Route path='/About' exact>
+                  <About />
+                </Route>
+                <Route path='/Skills' exact>
+                  <Skills />
+                </Route>
+                <Route path='/Projects' exact>
+                  <Projects />
+                </Route>
+                <Route>
+                  <Redirect to='/' />
+                </Route>
+              </Switch>
             </div>
           </div>
         </div>
