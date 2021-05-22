@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import menu from '../../assets/icons/menu.svg';
 import home from '../../assets/icons/home.svg';
 import about from '../../assets/icons/person.svg';
@@ -23,35 +24,38 @@ const Navbar = () => {
         <a href='#' className='navbar_menu_container' onClick={toggleIcons}>
           <img className='navbar_menu navbar_activator' title='menu' src={menu} alt='menu' />
         </a>
-        <a
-          id='navbar_icon_container'
+        <Link
+          to='/Projects'
           className={activeIcons ? 'navbar_icon_container active_icons' : 'navbar_icon_container'}
-          onClick={() => setActivePage('Projects')}
-          href='#'
         >
-          <img className='navbar_icon projects' title='projects' src={projects} alt='' />
-        </a>
-        <a
+          <a onClick={() => setActivePage('Projects')} href='#'>
+            <img className='navbar_icon projects' title='projects' src={projects} alt='' />
+          </a>
+        </Link>
+        <Link
+          to='/Skills'
           className={activeIcons ? 'navbar_icon_container active_icons' : 'navbar_icon_container'}
-          onClick={() => setActivePage('Skills')}
-          href='#'
         >
-          <img className='navbar_icon skills' title='skills' src={skills} alt='' />
-        </a>
-        <a
+          <a onClick={() => setActivePage('Skills')} href='#'>
+            <img className='navbar_icon skills' title='skills' src={skills} alt='' />
+          </a>
+        </Link>
+        <Link
+          to='/About'
           className={activeIcons ? 'navbar_icon_container active_icons' : 'navbar_icon_container'}
-          onClick={() => setActivePage('About')}
-          href='#'
         >
-          <img className='navbar_icon about' title='about' src={about} alt='' />
-        </a>
-        <a
+          <a onClick={() => setActivePage('About')} href='#'>
+            <img className='navbar_icon about' title='about' src={about} alt='' />
+          </a>
+        </Link>
+        <Link
+          to='/Home'
           className={activeIcons ? 'navbar_icon_container active_icons' : 'navbar_icon_container'}
-          onClick={() => setActivePage('Home')}
-          href='#'
         >
-          <img className='navbar_icon home' title='home' src={home} alt='' />
-        </a>
+          <a onClick={() => setActivePage('Home')} href='#'>
+            <img className='navbar_icon home' title='home' src={home} alt='' />
+          </a>
+        </Link>
       </div>
     </div>
   );
