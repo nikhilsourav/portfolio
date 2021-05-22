@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import menu from '../../assets/icons/menu.svg';
 import home from '../../assets/icons/home.svg';
@@ -16,6 +16,15 @@ const Navbar = () => {
 
   // Active Page
   const [activePage, setActivePage] = useState('Home');
+
+  useEffect(() => {
+    let currentUrl = window.location.href;
+
+    if (currentUrl.endsWith('/')) setActivePage('Home');
+    else if (currentUrl.endsWith('/About')) setActivePage('About');
+    else if (currentUrl.endsWith('/Skills')) setActivePage('Skills');
+    else if (currentUrl.endsWith('/Projects')) setActivePage('Projects');
+  }, [activePage]);
 
   return (
     <div className='navbar'>
@@ -49,7 +58,7 @@ const Navbar = () => {
           </a>
         </Link>
         <Link
-          to='/Home'
+          to='/'
           className={activeIcons ? 'navbar_icon_container active_icons' : 'navbar_icon_container'}
         >
           <a onClick={() => setActivePage('Home')} href='#'>

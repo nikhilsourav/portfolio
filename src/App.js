@@ -1,7 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
+import Home from './components/Home/Home.js';
+import About from './components/About/About.js';
+import Skills from './components/Skills/Skills.js';
+import Projects from './components/Projects/Projects.js';
 
 function App() {
   return (
@@ -14,6 +18,18 @@ function App() {
             </div>
             <div className='content'>
               <Navbar />
+              <Route path='/' exact>
+                <Home />
+              </Route>
+              <Route path='/About' exact>
+                <About />
+              </Route>
+              <Route path='/Skills' exact>
+                <Skills />
+              </Route>
+              <Route path='/Projects' exact>
+                <Projects />
+              </Route>
             </div>
           </div>
         </div>
