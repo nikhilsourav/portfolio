@@ -64,7 +64,7 @@ const Projects = () => {
         <img className='project_img' src={calishred} alt='Calishred Fitness' />
         <div className='project_descriptions'>
           <h5>Calishred fitness</h5>
-          <p className='project_description_text'>
+          <p className='project_description_text flex_fix'>
             Calishred Fitness is a personal fitness training service by &nbsp;
             <a
               href='https://www.linkedin.com/in/pranav-calishred/'
