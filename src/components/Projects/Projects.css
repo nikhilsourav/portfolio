@@ -1,0 +1,20 @@
+/* =========== Projects ==========*/
+.projects {
+  min-width: 100%;
+  margin: auto;
+}
+
+/* =========== Projects image container ==========*/
+.project_img_container {
+  height: 33rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========== Projects image ==========*/
+.project_img {
+  width: 37rem;
+  margin: 120px 0;
+}

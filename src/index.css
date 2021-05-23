@@ -25,6 +25,10 @@ body {
   color: var(--black);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ========== Main =========== */
 .main {
   min-height: 100vh;
@@ -43,6 +47,7 @@ body {
   border-radius: 2rem;
   z-index: 3;
   backdrop-filter: blur(2rem);
+  margin: 1.25rem;
   /* for sidebar and main */
   display: flex;
 }
@@ -130,4 +135,7 @@ body {
 /* ========== Content =========== */
 .content {
   flex: 2.1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4.35rem;
 }
