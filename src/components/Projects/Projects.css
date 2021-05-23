@@ -6,8 +6,6 @@
 
 /* =========== Projects image container ==========*/
 .project_img_container {
-  height: 33rem;
-  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,5 +14,98 @@
 /* =========== Projects image ==========*/
 .project_img {
   width: 37rem;
-  margin: 120px 0;
+}
+
+/* =========== Projects image ==========*/
+.wrapper {
+  width: 100%;
+  height: 33rem;
+  overflow-y: scroll;
+}
+.card {
+  height: auto;
+  width: 85%;
+  margin: 140px auto;
+  border-radius: 22px;
+  background: transparent;
+  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  overflow: hidden;
+}
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 90%;
+    border-radius: 10px;
+  }
+}
+.card .project_img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+}
+.project_descriptions {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s ease-in-out;
+  padding: 20px;
+  clip-path: circle(0% at 100% 100%);
+}
+.card:hover .project_descriptions {
+  left: 0px;
+  transition: all 0.7s ease-in-out;
+  clip-path: circle(75%);
+}
+.card:hover {
+  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  transform: scale(0.97);
+}
+.card:hover .project_img {
+  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  transform: scale(1.6) rotate(20deg);
+  filter: blur(3px);
+}
+.card h5 {
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Overpass';
+  font-weight: 600;
+}
+.project_description_text {
+  font-family: 'Nunito';
+  font-size: 0.9rem;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+@media only screen and (max-width: 600px) {
+  .project_description_text {
+    display: none;
+  }
+}
+.project_links {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.project_links a {
+  transition: all 0.5s ease;
+}
+.project_links a:hover {
+  transform: scale(1.2);
+}
+.project_links img {
+  max-width: 25px;
+  margin: 8px;
 }

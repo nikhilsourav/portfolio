@@ -29,6 +29,15 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-image: linear-gradient(to right bottom, var(--darkColor), var(--lightColor));
+}
+
 /* ========== Main =========== */
 .main {
   min-height: 100vh;
