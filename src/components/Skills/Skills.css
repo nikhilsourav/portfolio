@@ -1,19 +1,25 @@
 .skills_container {
-  padding: 20px;
-  width: 85%;
-  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  width: 100%;
+  margin: 2.813rem auto 0 auto;
   height: 33rem;
   overflow-y: scroll;
-}
-.skills_languages {
-  margin-top: 1rem;
 }
 .skills_tools {
   margin-top: 4rem;
 }
 
+.skills_language_body {
+  margin: 0 1.5rem;
+}
+@media only screen and (max-width: 1000px) {
+  .skills_language_body {
+    margin: 0 0.5rem;
+  }
+}
+
 .skills_language_heading {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 1.3rem;
   font-family: 'Overpass';
@@ -26,7 +32,7 @@
   background-color: var(--white);
   border-radius: 20px;
   margin-bottom: 12px;
-  margin-left: -20px;
+  margin-left: -5px;
 }
 
 .bar_icon {

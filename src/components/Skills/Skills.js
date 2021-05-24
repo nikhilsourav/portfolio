@@ -5,38 +5,38 @@ import Bar from './Bar';
 // languages and tools data
 const languages = [
   {
-    icon: <i class='fab fa-python'></i>,
+    icon: <i className='fab fa-python'></i>,
     name: 'Python',
     level: '49',
   },
   {
-    icon: <i class='fab fa-js-square'></i>,
+    icon: <i className='fab fa-js-square'></i>,
     name: 'JavaScript',
     level: '73',
   },
   {
-    icon: <i class='fab fa-react'></i>,
+    icon: <i className='fab fa-react'></i>,
     name: 'ReactJs',
     level: '65',
   },
   {
-    icon: <i class='fas fa-terminal'></i>,
+    icon: <i className='fas fa-terminal'></i>,
     name: 'C',
     level: '62',
   },
 
   {
-    icon: <i class='fab fa-node-js'></i>,
+    icon: <i className='fab fa-node-js'></i>,
     name: 'NodeJs',
     level: '72',
   },
   {
-    icon: <i class='fas fa-code'></i>,
+    icon: <i className='fas fa-code'></i>,
     name: 'C++',
     level: '69',
   },
   {
-    icon: <i class='fas fa-database'></i>,
+    icon: <i className='fas fa-database'></i>,
     name: 'MongoDB',
     level: '58',
   },
@@ -44,32 +44,32 @@ const languages = [
 
 const tools = [
   {
-    icon: <i class='fab fa-git-alt'></i>,
+    icon: <i className='fab fa-git-alt'></i>,
     name: 'Git',
     level: '75',
   },
   {
-    icon: <i class='fab fa-github-alt'></i>,
+    icon: <i className='fab fa-github-alt'></i>,
     name: 'Github',
     level: '70',
   },
   {
-    icon: <i class='fab fa-figma'></i>,
+    icon: <i className='fab fa-figma'></i>,
     name: 'Figma',
     level: '60',
   },
   {
-    icon: <i class='fab fa-windows'></i>,
+    icon: <i className='fab fa-windows'></i>,
     name: 'VS Code',
     level: '80',
   },
   {
-    icon: <i class='fas fa-camera'></i>,
+    icon: <i className='fas fa-camera'></i>,
     name: 'Photoshop',
     level: '73',
   },
   {
-    icon: <i class='fas fa-address-card'></i>,
+    icon: <i className='fas fa-address-card'></i>,
     name: 'Postman',
     level: '70',
   },
