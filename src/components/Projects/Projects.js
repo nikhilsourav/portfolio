@@ -8,8 +8,6 @@ import rose from '../../assets/projects/rose.png';
 import weather from '../../assets/projects/weather.png';
 import weebook from '../../assets/projects/weebook.png';
 import youtool from '../../assets/projects/youtool.png';
-import github from '../../assets/icons/github_dark.svg';
-import globe from '../../assets/icons/globe.svg';
 
 const Projects = () => {
   return (
@@ -27,10 +25,10 @@ const Projects = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img title='github link' src={github} alt='github' />
+              <i className='fab fa-github'></i>
             </a>
             <a href='https://weebook.netlify.app/' target='_blank' rel='noopener noreferrer'>
-              <img title='visit' src={globe} alt='visit' />
+              <i className='fas fa-globe-americas'></i>
             </a>
           </div>
         </div>
@@ -48,14 +46,14 @@ const Projects = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img title='github link' src={github} alt='github' />
+              <i className='fab fa-github'></i>
             </a>
             <a
               href='https://nikhilsourav.github.io/canvas/'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img title='visit' src={globe} alt='visit' />
+              <i className='fas fa-globe-americas'></i>
             </a>
           </div>
         </div>
@@ -80,14 +78,14 @@ const Projects = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img title='github link' src={github} alt='github' />
+              <i className='fab fa-github'></i>
             </a>
             <a
               href='https://nikhilsourav.github.io/CalishredFitness/'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img title='visit' src={globe} alt='visit' />
+              <i className='fas fa-globe-americas'></i>
             </a>
           </div>
         </div>
@@ -105,10 +103,10 @@ const Projects = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img title='github link' src={github} alt='github' />
+              <i className='fab fa-github'></i>
             </a>
             <a href='https://youtool.netlify.app/' target='_blank' rel='noopener noreferrer'>
-              <img title='visit' src={globe} alt='visit' />
+              <i className='fas fa-globe-americas'></i>
             </a>
           </div>
         </div>
@@ -126,14 +124,14 @@ const Projects = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img title='github link' src={github} alt='github' />
+              <i className='fab fa-github'></i>
             </a>
             <a
               href='http://chat-app-by-nikhilsourav.herokuapp.com/'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img title='visit' src={globe} alt='visit' />
+              <i className='fas fa-globe-americas'></i>
             </a>
           </div>
         </div>
@@ -147,7 +145,7 @@ const Projects = () => {
           </p>
           <div className='project_links'>
             <a href='http://therosesolution.in/' target='_blank' rel='noopener noreferrer'>
-              <img title='visit' src={globe} alt='visit' />
+              <i className='fas fa-globe-americas'></i>
             </a>
           </div>
         </div>
@@ -165,14 +163,14 @@ const Projects = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img title='github link' src={github} alt='github' />
+              <i className='fab fa-github'></i>
             </a>
             <a
               href='http://weather-app-by-ns.herokuapp.com/'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img title='visit' src={globe} alt='visit' />
+              <i className='fas fa-globe-americas'></i>
             </a>
           </div>
         </div>
@@ -190,14 +188,14 @@ const Projects = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img title='github link' src={github} alt='github' />
+              <i className='fab fa-github'></i>
             </a>
             <a
               href='https://nikhilsourav.github.io/fetch-user/'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img title='visit' src={globe} alt='visit' />
+              <i className='fas fa-globe-americas'></i>
             </a>
           </div>
         </div>

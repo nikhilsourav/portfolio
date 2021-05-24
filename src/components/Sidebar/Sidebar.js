@@ -1,11 +1,5 @@
 import React from 'react';
 import profile from '../../assets/projects/profile.png';
-import address from '../../assets/icons/address.svg';
-import phone from '../../assets/icons/phone.svg';
-import email from '../../assets/icons/email.svg';
-import github from '../../assets/icons/github.svg';
-import linkedin from '../../assets/icons/linkedin.svg';
-import hashnode from '../../assets/icons/hashnode.svg';
 import resume from '../../assets/resume/resume.pdf';
 import './Sidebar.css';
 
@@ -32,15 +26,15 @@ const Sidebar = () => {
         <h5 className='sidebar_details_heading'>Personal Details:</h5>
         <ul>
           <li>
-            <img className='sidebar_icons address' src={address} alt='address' />
+            <i className='fas fa-map-marker-alt sidebar_icons address'></i>
             Dhanbad, Jharkhand
           </li>
           <li>
-            <img className='sidebar_icons phone' src={phone} alt='phone' />
+            <i className='fas fa-phone-alt sidebar_icons phone'></i>
             +91 6205996766
           </li>
           <li>
-            <img className='sidebar_icons email' src={email} alt='email' />
+            <i className='fas fa-envelope sidebar_icons email'></i>
             nikhil.rj900@gmail.com
           </li>
         </ul>
@@ -50,7 +44,7 @@ const Sidebar = () => {
         <ul>
           <a href='https://github.com/nikhilsourav' target='_blank' rel='noopener noreferrer'>
             <li>
-              <img className='sidebar_icons github' src={github} alt='github' />
+              <i className='fab fa-github sidebar_icons github'></i>
               Github
             </li>
           </a>
@@ -60,13 +54,13 @@ const Sidebar = () => {
             rel='noopener noreferrer'
           >
             <li>
-              <img className='sidebar_icons linkedin' src={linkedin} alt='linkedin' />
+              <i className='fab fa-linkedin sidebar_icons linkedin'></i>
               LinkedIn
             </li>
           </a>
           <a href='https://hashnode.com/@fifu' target='_blank' rel='noopener noreferrer'>
             <li>
-              <img className='sidebar_icons hashnode' src={hashnode} alt='hashnode' />
+              <i className='fas fa-file-code sidebar_icons hashnode'></i>
               Hashnode
             </li>
           </a>

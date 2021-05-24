@@ -28,6 +28,7 @@
 .navbar_items button {
   outline: none;
   border: none;
+  color: var(--black);
   background-color: transparent;
 }
 /* Ripple effect */
@@ -44,6 +45,7 @@
   background-size: 100%;
   transition: all 0s ease;
 }
+/* Ripple effect end */
 .navbar_menu_container {
   margin-left: 15px;
   border-radius: 50%;
@@ -51,11 +53,10 @@
   transition: all 0.3s linear;
 }
 .navbar_menu {
-  max-width: 38px;
+  max-width: 40px;
   padding: 0.5em;
   cursor: pointer;
 }
-/* ripple effect */
 
 /* ======== Navbar icons ======= */
 .navbar_icon_container {
@@ -73,6 +74,7 @@
   padding: 0.5em;
   width: 100%;
   max-width: 35px;
+  color: var(--black);
 }
 .navbar_icon_container:hover {
   border-radius: 50%;

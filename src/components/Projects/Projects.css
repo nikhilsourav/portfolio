@@ -105,12 +105,23 @@
   width: 100%;
 }
 .project_links a {
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
+  transform: scale(1.9);
+  margin: 8px 15px;
+  padding: 5px;
 }
 .project_links a:hover {
-  transform: scale(1.2);
+  transform: scale(2.1);
 }
-.project_links img {
-  max-width: 25px;
-  margin: 8px;
+.project_links a i {
+  color: #353839;
+}
+@media only screen and (max-width: 600px) {
+  .project_links a {
+    transform: scale(1.4);
+    margin: 8px 10px;
+  }
+  .project_links a:hover {
+    transform: scale(1.8);
+  }
 }

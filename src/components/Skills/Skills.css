@@ -1,0 +1,48 @@
+.skills_container {
+  padding: 20px;
+  width: 85%;
+  margin: 0 auto;
+  height: 33rem;
+  overflow-y: scroll;
+}
+.skills_languages {
+  margin-top: 1rem;
+}
+.skills_tools {
+  margin-top: 4rem;
+}
+
+.skills_language_heading {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Overpass';
+  font-weight: 600;
+  color: var(--black);
+}
+
+.bar {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 20px;
+  margin-bottom: 12px;
+  margin-left: -20px;
+}
+
+.bar_icon {
+  width: 15px;
+  height: 15px;
+}
+
+.bar_wrapper {
+  background-color: var(--darkColor);
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 4px 14px;
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.bar_name {
+  margin-left: 10px;
+}

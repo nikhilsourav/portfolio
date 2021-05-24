@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import menu from '../../assets/icons/menu.svg';
-import about from '../../assets/icons/person.svg';
-import skills from '../../assets/icons/skill.svg';
-import projects from '../../assets/icons/projects.svg';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -30,7 +26,7 @@ const Navbar = () => {
       <div className='navbar_active'>{activePage}</div>
       <div className='navbar_items'>
         <button className='navbar_menu_container ripple' onClick={toggleIcons}>
-          <img className='navbar_menu navbar_activator' title='menu' src={menu} alt='menu' />
+          <i className='fas fa-bars navbar_menu'></i>
         </button>
         <Link
           to='/Projects'
@@ -42,7 +38,7 @@ const Navbar = () => {
           onClick={() => setActivePage('Projects')}
           href='#'
         >
-          <img className='navbar_icon projects' title='projects' src={projects} alt='' />
+          <i className='fas fa-briefcase navbar_icon projects'></i>
         </Link>
         <Link
           to='/Skills'
@@ -54,7 +50,7 @@ const Navbar = () => {
           onClick={() => setActivePage('Skills')}
           href='#'
         >
-          <img className='navbar_icon skills' title='skills' src={skills} alt='' />
+          <i className='fas fa-tools navbar_icon skills'></i>
         </Link>
         <Link
           onClick={() => setActivePage('About')}
@@ -66,7 +62,7 @@ const Navbar = () => {
               : 'navbar_icon_container ripple'
           }
         >
-          <img className='navbar_icon about' title='about' src={about} alt='' />
+          <i className='fas fa-user navbar_icon about'></i>
         </Link>
       </div>
     </div>
