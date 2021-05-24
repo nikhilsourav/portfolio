@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import menu from '../../assets/icons/menu.svg';
-import home from '../../assets/icons/home.svg';
 import about from '../../assets/icons/person.svg';
 import skills from '../../assets/icons/skill.svg';
 import projects from '../../assets/icons/projects.svg';
@@ -15,12 +14,12 @@ const Navbar = () => {
   };
 
   // Active Page
-  const [activePage, setActivePage] = useState('Home');
+  const [activePage, setActivePage] = useState('About');
 
   useEffect(() => {
     let currentUrl = window.location.href;
 
-    if (currentUrl.endsWith('/')) setActivePage('Home');
+    if (currentUrl.endsWith('/')) setActivePage('About');
     else if (currentUrl.endsWith('/About')) setActivePage('About');
     else if (currentUrl.endsWith('/Skills')) setActivePage('Skills');
     else if (currentUrl.endsWith('/Projects')) setActivePage('Projects');
@@ -60,7 +59,7 @@ const Navbar = () => {
         <Link
           onClick={() => setActivePage('About')}
           href='#'
-          to='/About'
+          to='/'
           className={
             activeIcons
               ? 'navbar_icon_container active_icons ripple'
@@ -68,18 +67,6 @@ const Navbar = () => {
           }
         >
           <img className='navbar_icon about' title='about' src={about} alt='' />
-        </Link>
-        <Link
-          to='/'
-          className={
-            activeIcons
-              ? 'navbar_icon_container active_icons ripple'
-              : 'navbar_icon_container ripple'
-          }
-          onClick={() => setActivePage('Home')}
-          href='#'
-        >
-          <img className='navbar_icon home' title='home' src={home} alt='' />
         </Link>
       </div>
     </div>
