@@ -79,7 +79,7 @@ const Skills = () => {
   return (
     <div className='skills_container'>
       <div className='skills_languages'>
-        <h5 className='skills_language_heading'>Languages and Frameworks:</h5>
+        <h5 className='skills_language_heading'>Languages &amp; Frameworks:</h5>
         <div className='skills_language_body'>
           {languages.map((language, index) => (
             <Bar value={language} key={index} />
@@ -87,7 +87,7 @@ const Skills = () => {
         </div>
       </div>
       <div className='skills_tools'>
-        <h5 className='skills_language_heading'>Tools and Softwares:</h5>
+        <h5 className='skills_language_heading'>Tools &amp; Softwares:</h5>
         <div className='skills_language_body'>
           {tools.map((tool, index) => (
             <Bar value={tool} key={index} />

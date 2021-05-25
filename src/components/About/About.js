@@ -4,7 +4,7 @@ import './About.css';
 const About = () => {
   return (
     <div className='about_container'>
-      <h3>Timeline</h3>
+      <h3>Timeline:</h3>
       <section id='cd-timeline' className='cd-container timeline-length-fix'>
         <div className='cd-timeline-block'>
           <div className='cd-timeline-img cd-picture'></div>
@@ -88,7 +88,7 @@ const About = () => {
         </div>
       </section>
 
-      <h3>Education</h3>
+      <h3>Education:</h3>
       <section id='cd-timeline' className='cd-container'>
         <div className='cd-timeline-block'>
           <div className='cd-timeline-img cd-picture'></div>
