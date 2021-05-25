@@ -1,14 +1,37 @@
 import React from 'react';
 import './Skills.css';
+import { motion } from 'framer-motion';
 
 const Bar = ({ value: { icon, name, level } }) => {
-  const bar_width = `${level}%`;
+  // framer motion
+  const animationVariant = {
+    hidden: {
+      width: '0',
+      opacity: 0,
+    },
+    visible: {
+      width: `${level}%`,
+      transition: { type: 'spring' },
+      opacity: 1,
+    },
+    exit: {
+      opacity: 0,
+      transition: { ease: 'easeInOut' },
+    },
+  };
+
   return (
     <div className='bar'>
-      <div className='bar_wrapper' style={{ width: bar_width }}>
+      <motion.div
+        className='bar_wrapper'
+        variants={animationVariant}
+        initial='hidden'
+        animate='visible'
+        exit='exit'
+      >
         {icon}
         <span className='bar_name'>{name}</span>
-      </div>
+      </motion.div>
     </div>
   );
 };
