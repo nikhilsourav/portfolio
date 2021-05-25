@@ -1,9 +1,11 @@
+/* =========== Container =========== */
 .about_container {
   margin-top: 2.813rem;
   height: 33rem;
   overflow-y: scroll;
 }
 
+/* =========== Main Heading =========== */
 .about_container h1 {
   font-family: 'Nunito';
   font-weight: 600;
@@ -19,6 +21,7 @@
   letter-spacing: 0.5px;
 }
 
+/* =========== Sub Heading =========== */
 .about_container h3 {
   text-align: center;
   font-size: 1.3rem;
@@ -32,6 +35,7 @@
   background-color: var(--darkColor);
 }
 
+/* =========== Timeline =========== */
 .cd-container {
   width: 95%;
   max-width: 900px;
@@ -69,16 +73,12 @@
 }
 
 @media only screen and (min-width: 1170px) {
-  /* #cd-timeline {
-    margin-top: 3em;
-    margin-bottom: 3em;
-  } */
-
   #cd-timeline::before {
     left: 50%;
     margin-left: -2px;
   }
 }
+
 .cd-timeline-block {
   position: relative;
   margin: 2em 0;
@@ -111,6 +111,7 @@
     margin-bottom: 0;
   }
 }
+
 .cd-timeline-img {
   position: absolute;
   top: 0px;
@@ -138,6 +139,7 @@
     -webkit-backface-visibility: hidden; */
   }
 }
+
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
@@ -212,6 +214,7 @@
     font-weight: bold;
   }
 }
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     color: var(--white);

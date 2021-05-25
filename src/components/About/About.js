@@ -19,6 +19,7 @@ const About = () => {
       transition: { type: 'sprint' },
     },
   };
+
   const headingVariant = {
     hidden: {
       opacity: 0,

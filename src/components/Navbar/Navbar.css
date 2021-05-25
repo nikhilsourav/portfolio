@@ -64,9 +64,11 @@
   transform: translateX(90%);
   opacity: 0;
   z-index: 0;
+  cursor: auto;
   transition: all 0.3s ease-in-out;
 }
 .active_icons {
+  cursor: pointer;
   opacity: 1;
   transform: translateX(0%);
 }
