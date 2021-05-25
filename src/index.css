@@ -8,10 +8,10 @@
 :root {
   --white: #fafafa;
   --black: #333333;
-  --lightColor: #6cdaeb94;
-  --darkColor: #1eae98;
-  --extraLightColor: #a9f1df;
-  --extraDarkColor: #15b396;
+  --lightColor: #3edbf0;
+  --darkColor: #13b4e0;
+  --extraLightColor: #1cc5dc;
+  --extraDarkColor: #1597bb;
 }
 
 * {

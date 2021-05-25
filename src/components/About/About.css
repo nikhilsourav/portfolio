@@ -4,11 +4,27 @@
   overflow-y: scroll;
 }
 
+.about_container h1 {
+  font-family: 'Nunito';
+  font-weight: 600;
+  font-size: 1.2em;
+  width: 90%;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+  background-color: var(--darkColor);
+  padding: 20px;
+  color: var(--white);
+  border-radius: 10px;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+}
+
 .about_container h3 {
   text-align: center;
   font-size: 1.3rem;
   font-family: 'Overpass';
   font-weight: 600;
+  margin-bottom: -30px;
 }
 
 .cd-container {
@@ -42,7 +58,7 @@
   position: absolute;
   top: 32px;
   left: 25px;
-  height: 97.3%;
+  height: 90.55%;
   width: 4px;
   background: var(--darkColor);
 }
@@ -124,6 +140,7 @@
   background: var(--darkColor);
   border-radius: 2px;
   padding: 1em;
+  border-radius: 15px;
 }
 .cd-timeline-content:after {
   content: '';
