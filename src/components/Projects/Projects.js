@@ -1,13 +1,13 @@
 import React from 'react';
 import './Projects.css';
-import calishred from '../../assets/projects/calishred.png';
-import canvas from '../../assets/projects/canvas.png';
-import fetch from '../../assets/projects/fetch.png';
-import justtalk from '../../assets/projects/justtalk.png';
-import rose from '../../assets/projects/rose.png';
-import weather from '../../assets/projects/weather.png';
-import weebook from '../../assets/projects/weebook.png';
-import youtool from '../../assets/projects/youtool.png';
+import calishred from '../../assets/projects/calishred.webp';
+import canvas from '../../assets/projects/canvas.webp';
+import fetch from '../../assets/projects/fetch.webp';
+import justtalk from '../../assets/projects/justtalk.webp';
+import rose from '../../assets/projects/rose.webp';
+import weather from '../../assets/projects/weather.webp';
+import weebook from '../../assets/projects/weebook.webp';
+import youtool from '../../assets/projects/youtool.webp';
 import { motion } from 'framer-motion';
 
 const Projects = () => {

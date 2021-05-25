@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../../assets/projects/profile.png';
+import profile from '../../assets/projects/profile.webp';
 import resume from '../../assets/resume/resume.pdf';
 import './Sidebar.css';
 import { motion } from 'framer-motion';
