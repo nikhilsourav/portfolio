@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   // Animated icons
@@ -21,8 +22,26 @@ const Navbar = () => {
     else if (currentUrl.endsWith('/Projects')) setActivePage('Projects');
   }, [activePage]);
 
+  // framer motion
+  const animationVariant = {
+    hidden: {
+      y: '-2vh',
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
-    <div className='navbar'>
+    <motion.div
+      className='navbar'
+      variants={animationVariant}
+      initial='hidden'
+      animate='visible'
+      transition={{ type: 'tween', duration: 0.6, delay: 0 }}
+    >
       <div className='navbar_active'>{activePage}</div>
       <div className='navbar_items'>
         <button className='navbar_menu_container ripple' onClick={toggleIcons}>
@@ -65,7 +84,7 @@ const Navbar = () => {
           <i className='fas fa-user navbar_icon about'></i>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

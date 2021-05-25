@@ -1,6 +1,7 @@
 import React from 'react';
 import './Skills.css';
 import Bar from './Bar';
+import { motion } from 'framer-motion';
 
 // languages and tools data
 const languages = [
@@ -76,8 +77,29 @@ const tools = [
 ];
 
 const Skills = () => {
+  // framer motion
+  const animationVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: { type: 'tween', duration: 0.65, delay: 0 },
+    },
+    exit: {
+      transition: { type: 'spring' },
+      opacity: 0,
+    },
+  };
+
   return (
-    <div className='skills_container'>
+    <motion.div
+      className='skills_container'
+      variants={animationVariant}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+    >
       <div className='skills_languages'>
         <h5 className='skills_language_heading'>Languages &amp; Frameworks:</h5>
         <div className='skills_language_body'>
@@ -94,7 +116,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

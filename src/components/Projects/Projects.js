@@ -8,11 +8,34 @@ import rose from '../../assets/projects/rose.png';
 import weather from '../../assets/projects/weather.png';
 import weebook from '../../assets/projects/weebook.png';
 import youtool from '../../assets/projects/youtool.png';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
+  // framer motion
+  const animationVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: { type: 'tween', duration: 0.15 },
+    },
+    exit: {
+      transition: { type: 'spring' },
+      opacity: 0,
+    },
+  };
+
   return (
     <div className='projects wrapper'>
-      <div className='project_img_container card'>
+      <motion.div
+        variants={animationVariant}
+        initial='hidden'
+        animate='visible'
+        transition={{ type: 'spring', duration: 0.2, delay: 0 }}
+        exit='exit'
+        className='project_img_container card'
+      >
         <img className='project_img' src={weebook} alt='MERN Stack App' />
         <div className='project_descriptions'>
           <h5>WeeBook</h5>
@@ -32,8 +55,15 @@ const Projects = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className='project_img_container card'>
+      </motion.div>
+      <motion.div
+        variants={animationVariant}
+        initial='hidden'
+        animate='visible'
+        transition={{ type: 'spring', duration: 0.2, delay: 0.15 }}
+        exit='exit'
+        className='project_img_container card'
+      >
         <img className='project_img' src={canvas} alt='HTML5 Canvas' />
         <div className='project_descriptions'>
           <h5>Canvas</h5>
@@ -57,8 +87,15 @@ const Projects = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className='project_img_container card'>
+      </motion.div>
+      <motion.div
+        variants={animationVariant}
+        initial='hidden'
+        animate='visible'
+        transition={{ type: 'spring', duration: 0.2, delay: 0.3 }}
+        exit='exit'
+        className='project_img_container card'
+      >
         <img className='project_img' src={calishred} alt='Calishred Fitness' />
         <div className='project_descriptions'>
           <h5>Calishred fitness</h5>
@@ -89,8 +126,15 @@ const Projects = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className='project_img_container card'>
+      </motion.div>
+      <motion.div
+        variants={animationVariant}
+        initial='hidden'
+        animate='visible'
+        transition={{ type: 'spring', duration: 0.2, delay: 0.45 }}
+        exit='exit'
+        className='project_img_container card'
+      >
         <img className='project_img' src={youtool} alt='Playlist Duration Calculator' />
         <div className='project_descriptions'>
           <h5>YouTool</h5>
@@ -110,8 +154,15 @@ const Projects = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className='project_img_container card'>
+      </motion.div>
+      <motion.div
+        variants={animationVariant}
+        initial='hidden'
+        animate='visible'
+        transition={{ type: 'spring', duration: 0.2, delay: 0.6 }}
+        exit='exit'
+        className='project_img_container card'
+      >
         <img className='project_img' src={justtalk} alt='Chat App' />
         <div className='project_descriptions'>
           <h5>JustTalk</h5>
@@ -135,8 +186,15 @@ const Projects = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className='project_img_container card'>
+      </motion.div>
+      <motion.div
+        variants={animationVariant}
+        initial='hidden'
+        animate='visible'
+        transition={{ type: 'spring', duration: 0.2, delay: 0.75 }}
+        exit='exit'
+        className='project_img_container card'
+      >
         <img className='project_img' src={rose} alt='The Rose Solution' />
         <div className='project_descriptions'>
           <h5>The Rose Solution</h5>
@@ -149,8 +207,15 @@ const Projects = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className='project_img_container card'>
+      </motion.div>
+      <motion.div
+        variants={animationVariant}
+        initial='hidden'
+        animate='visible'
+        transition={{ type: 'spring', duration: 0.2, delay: 0.9 }}
+        exit='exit'
+        className='project_img_container card'
+      >
         <img className='project_img' src={weather} alt='Weather App' />
         <div className='project_descriptions'>
           <h5>Go-Weather</h5>
@@ -174,8 +239,15 @@ const Projects = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className='project_img_container card'>
+      </motion.div>
+      <motion.div
+        variants={animationVariant}
+        initial='hidden'
+        animate='visible'
+        transition={{ type: 'spring', duration: 0.2, delay: 1.05 }}
+        exit='exit'
+        className='project_img_container card'
+      >
         <img className='project_img' src={fetch} alt='Fetch Random User' />{' '}
         <div className='project_descriptions'>
           <h5>Fetch User</h5>
@@ -199,7 +271,7 @@ const Projects = () => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
