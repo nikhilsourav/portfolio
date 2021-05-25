@@ -24,7 +24,12 @@
   font-size: 1.3rem;
   font-family: 'Overpass';
   font-weight: 600;
-  margin-bottom: -30px;
+  margin: 0 auto -25px auto;
+  color: var(--white);
+  width: fit-content;
+  padding: 7px 15px 5px 15px;
+  border-radius: 10px;
+  background-color: var(--darkColor);
 }
 
 .cd-container {

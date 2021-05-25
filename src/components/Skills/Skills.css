@@ -21,10 +21,15 @@
 .skills_language_heading {
   margin-bottom: 50px;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: 'Overpass';
   font-weight: 600;
-  color: var(--black);
+  color: var(--white);
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  padding: 7px 15px 5px 15px;
+  border-radius: 10px;
+  background-color: var(--darkColor);
 }
 
 .bar {
