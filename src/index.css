@@ -10,8 +10,9 @@
   --black: #333333;
   --lightColor: #3edbf0;
   --darkColor: #13b4e0;
-  --extraLightColor: #1cc5dc;
-  --extraDarkColor: #1597bb;
+  --color_1: rgba(255, 255, 255, 0.25);
+  --color_2: rgba(255, 255, 255, 0.5);
+  --color_3: rgba(255, 255, 255, 0.75);
 }
 
 * {
@@ -52,12 +53,11 @@ html {
   background: var(--white);
   min-height: 90vh;
   width: 65%;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  background: linear-gradient(to right bottom, var(--color_1), var(--color_1));
   border-radius: 2rem;
   z-index: 3;
-  backdrop-filter: blur(2rem);
+  backdrop-filter: blur(1.2rem);
   margin: 1.25rem;
-  /* for sidebar and main */
   display: flex;
 }
 @media only screen and (max-width: 1000px) {
@@ -77,14 +77,10 @@ html {
 .circle2,
 .circle3,
 .circle4 {
-  background: var(white);
+  background: var(--white);
   height: 15rem;
   width: 15rem;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.75),
-    rgba(255, 255, 255, 0.25)
-  );
+  background: linear-gradient(to right bottom, var(--color_2), var(--color_1));
   position: absolute;
   z-index: 2;
   border-radius: 50%;
@@ -106,7 +102,7 @@ html {
   height: 8rem;
   width: 8rem;
   opacity: 0.5;
-  background: linear-gradient(to left top, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25));
+  background: linear-gradient(to left top, var(--color_3), var(--color_2));
 }
 
 .circle4 {
@@ -115,7 +111,15 @@ html {
   height: 7rem;
   width: 7rem;
   opacity: 0.3;
-  background: linear-gradient(to right top, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25));
+  background: linear-gradient(to right top, var(--color_3), var(--color_2));
+}
+@media only screen and (max-width: 600px) {
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4 {
+    display: none;
+  }
 }
 
 /* ========== Sidebar =========== */
@@ -126,7 +130,7 @@ html {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.25));
+  background: linear-gradient(to right bottom, var(--color_1), var(--color_1));
   border-radius: 2rem;
   max-width: 1200px;
 }
