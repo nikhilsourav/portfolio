@@ -4,12 +4,6 @@ import './Navbar.css';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
-  // Animated icons
-  const [activeIcons, setActiveIcons] = useState(false);
-  const toggleIcons = () => {
-    setActiveIcons(!activeIcons);
-  };
-
   // Active Page
   const [activePage, setActivePage] = useState('About');
 
@@ -44,16 +38,9 @@ const Navbar = () => {
     >
       <div className='navbar_active'>{activePage}</div>
       <div className='navbar_items'>
-        <button className='navbar_menu_container ripple' onClick={toggleIcons}>
-          <i className='fas fa-bars navbar_menu'></i>
-        </button>
         <Link
           to='/Projects'
-          className={
-            activeIcons
-              ? 'navbar_icon_container active_icons ripple'
-              : 'navbar_icon_container ripple'
-          }
+          className='navbar_icon_container active_icons ripple'
           onClick={() => setActivePage('Projects')}
           href='#'
         >
@@ -61,11 +48,7 @@ const Navbar = () => {
         </Link>
         <Link
           to='/Skills'
-          className={
-            activeIcons
-              ? 'navbar_icon_container active_icons ripple'
-              : 'navbar_icon_container ripple'
-          }
+          className='navbar_icon_container active_icons ripple'
           onClick={() => setActivePage('Skills')}
           href='#'
         >
@@ -75,11 +58,7 @@ const Navbar = () => {
           onClick={() => setActivePage('About')}
           href='#'
           to='/'
-          className={
-            activeIcons
-              ? 'navbar_icon_container active_icons ripple'
-              : 'navbar_icon_container ripple'
-          }
+          className='navbar_icon_container active_icons ripple'
         >
           <i className='fas fa-user navbar_icon about'></i>
         </Link>

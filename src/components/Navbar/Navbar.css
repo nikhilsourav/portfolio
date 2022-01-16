@@ -46,17 +46,6 @@
   transition: all 0s ease;
 }
 /* Ripple effect end */
-.navbar_menu_container {
-  margin-left: 15px;
-  border-radius: 50%;
-  z-index: 1;
-  transition: all 0.3s linear;
-}
-.navbar_menu {
-  max-width: 40px;
-  padding: 0.5em;
-  cursor: pointer;
-}
 
 /* ======== Navbar icons ======= */
 .navbar_icon_container {
